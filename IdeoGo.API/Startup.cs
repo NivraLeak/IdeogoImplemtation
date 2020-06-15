@@ -44,6 +44,7 @@ namespace IdeoGo.API
             services.AddDbContext<AppDbContext>(options =>
             {
                 //options.UseInMemoryDatabase("IdeoGo-api-in-memory");
+                options.UseMySQL("server=localhost;database=ideo#;user=root;password=13791924");
                 options.UseMySQL(Configuration.GetConnectionString("DefaultConnection"));
             });
 
