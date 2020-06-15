@@ -3,7 +3,7 @@ name: Deploy ASP.NET Core app to Azure Web App - IdeogoWebApplication
 on:
   push:
     branches:
-      - develop
+      - master
 
       jobs:
         build-and-deploy:
